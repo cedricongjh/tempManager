@@ -1,16 +1,22 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-extra')
 
-(async () => {
+// Add stealth plugin and use defaults (all tricks to hide puppeteer usage)
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+puppeteer.use(StealthPlugin())
+
+// Add adblocker plugin to block all ads and trackers (saves bandwidth)
+const AdblockerPlugin = require('puppeteer-extra-plugin-adblocker')
+puppeteer.use(AdblockerPlugin({ blockTrackers: true }))
+
+puppeteer.launch({ headless: false }).then(async browser => {
 
     // open browser and navigate to page
-    const browser = await puppeteer.launch({headless: false})
     const page = await browser.newPage()
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36')
     await page.goto("https://myaces.nus.edu.sg/htd")
 
     // login
-    await page.$eval('#userNameInput', el => el.value = `nusstu\\E0535045`)
-    await page.$eval('#passwordInput', el => el.value = `S99915041g!Y1S1`)   
+    await page.$eval('#userNameInput', el => el.value = `YOUR_USERNAME_HERE`)
+    await page.$eval('#passwordInput', el => el.value = `YOUR_PASSWORD_HERE`)   
     await page.click('#submitButton')
     await page.waitForNavigation()
 
@@ -22,5 +28,6 @@ const puppeteer = require('puppeteer');
     await page.waitForNavigation()
 
     // screenshot and close browser
-    await page.screenshot({path: 'screenshot.png'})
-})()
+    await page.screenshot({path: 'example_screenshot.png'})
+    await browser.close()
+})
