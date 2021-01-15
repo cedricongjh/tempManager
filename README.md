@@ -6,7 +6,7 @@ This program is solely for the use of educational purposes, of using puppeteer, 
 an open source project maintained by the Chrome DevTools team.
 
 # Usage
-1. Replace YOUR_USERNAME_HERE AND YOUR_PASSWORD_HERE.
+1. Replace YOUR_USERNAME_HERE AND YOUR_PASSWORD_HERE in main.js.
 
 2. Open a CLI, and change the working directory to the cloned repo. 
 
