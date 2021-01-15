@@ -2,10 +2,108 @@
 # yarn lockfile v1
 
 
+"@cliqz/adblocker-content@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@cliqz/adblocker-content/-/adblocker-content-1.19.0.tgz#c3e8ce50a719905cfcb66b114882c086b5074131"
+  integrity sha512-sciMicb+zmN5+iKCiDnWPegepgI32XzX4Snf1VxR+HAFwYGJmfk25vpL6ONd6hOlpmumxHkE/y5l7suH0ziP5g==
+
+"@cliqz/adblocker-puppeteer@^1.18.6":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@cliqz/adblocker-puppeteer/-/adblocker-puppeteer-1.19.0.tgz#4b1c404d293be204d4c343c45fdb998f35ef8171"
+  integrity sha512-mjs2iYFdoFpudq0E6y6DbcM98Ylc5dyBQLMc/Zj5CkDE2YIGL7XonB16Jw6AUOo5b7l8MoyEYNXpO7TWGAk0JQ==
+  dependencies:
+    "@cliqz/adblocker" "^1.19.0"
+    "@cliqz/adblocker-content" "^1.19.0"
+    tldts-experimental "^5.6.21"
+
+"@cliqz/adblocker@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@cliqz/adblocker/-/adblocker-1.19.0.tgz#1521673172998d0a691aeb1f2b2c1732c9b8c6ab"
+  integrity sha512-sy/aBjPoQsqLI5XYHAaZfgi+7HpddJmoHn/UMyX0dx0/jnnaM2/Z2LGylOsGwjW97GsNvvqSwXgxsEH2R0K9SQ==
+  dependencies:
+    "@remusao/guess-url-type" "^1.1.2"
+    "@remusao/small" "^1.1.2"
+    "@remusao/smaz" "^1.7.1"
+    "@types/chrome" "^0.0.127"
+    "@types/firefox-webext-browser" "^82.0.0"
+    tldts-experimental "^5.6.21"
+
+"@remusao/guess-url-type@^1.1.2":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@remusao/guess-url-type/-/guess-url-type-1.2.1.tgz#b3e7c32abdf98d0fb4f93cc67cad580b5fe4ba57"
+  integrity sha512-rbOqre2jW8STjheOsOaQHLgYBaBZ9Owbdt8NO7WvNZftJlaG3y/K9oOkl8ZUpuFBisIhmBuMEW6c+YrQl5inRA==
+
+"@remusao/small@^1.1.2":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@remusao/small/-/small-1.2.1.tgz#63bfe4548832289f94ac868a0c305970c9a0e5f9"
+  integrity sha512-7MjoGt0TJMVw1GPKgWq6SJPws1SLsUXQRa43Umht+nkyw2jnpy3WpiLNqGdwo5rHr5Wp9B2W/Pm5RQp656UJdw==
+
+"@remusao/smaz-compress@^1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@remusao/smaz-compress/-/smaz-compress-1.9.1.tgz#fc75eaf9bcac2d58bc4c3d518183a7cb9612d275"
+  integrity sha512-E2f48TwloQu3r6BdLOGF2aczeH7bJ/32oJGqvzT9SKur0cuUnLcZ7ZXP874E2fwmdE+cXzfC7bKzp79cDnmeyw==
+  dependencies:
+    "@remusao/trie" "^1.4.1"
+
+"@remusao/smaz-decompress@^1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@remusao/smaz-decompress/-/smaz-decompress-1.9.1.tgz#8094f997e8fb591a678cda9cf08c209c825eba5b"
+  integrity sha512-TfjKKprYe3n47od8auhvJ/Ikj9kQTbDTe71ynKlxslrvvUhlIV3VQSuwYuMWMbdz1fIs0H/fxCN1Z8/H3km6/A==
+
+"@remusao/smaz@^1.7.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@remusao/smaz/-/smaz-1.9.1.tgz#a2b9b045385f81e1615a68d932b7cc8b04c9db8d"
+  integrity sha512-e6BLuP8oaXCZ9+v46Is4ilAZ/Vq6YLgmBP204Ixgk1qTjXmqvFYG7+AS7v9nsZdGOy96r9DWGFbbDVgMxwu1rA==
+  dependencies:
+    "@remusao/smaz-compress" "^1.9.1"
+    "@remusao/smaz-decompress" "^1.9.1"
+
+"@remusao/trie@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@remusao/trie/-/trie-1.4.1.tgz#755d09f8a007476334e611f42719b2d581f00720"
+  integrity sha512-yvwa+aCyYI/UjeD39BnpMypG8N06l86wIDW1/PAc6ihBRnodIfZDwccxQN3n1t74wduzaz74m4ZMHZnB06567Q==
+
+"@types/chrome@0.0.91":
+  version "0.0.91"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.91.tgz#4b3996f55f344057e6a677c8366aa98080c6e380"
+  integrity sha512-vNvo9lJkp1AvViWrUwe1bxhoMwr5dRZWlgr1DTuaNkz97LsG56lDX1sceWeZir2gRACJ5vdHtoRdVAvm8C75Ug==
+  dependencies:
+    "@types/filesystem" "*"
+
+"@types/chrome@^0.0.127":
+  version "0.0.127"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.127.tgz#9e29f351d558f60e95326ceadc586fdcc824151b"
+  integrity sha512-hBB9EApLYKKn2GvklVkTxVP6vZvxsH9okyIRUinNtMzZHIgIKWQk/ESbX+O5g4Bihfy38+aFGn7Kl7Cxou5JUg==
+  dependencies:
+    "@types/filesystem" "*"
+    "@types/har-format" "*"
+
 "@types/debug@^4.1.0":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.5.tgz#b14efa8852b7768d898906613c23f688713e02cd"
   integrity sha512-Q1y515GcOdTHgagaVFhHnIFQ38ygs/kmxdNpvpou+raI9UO3YZcHDngBSYKQklcKlvA7iuQlmIKbzvmxcOE9CQ==
+
+"@types/filesystem@*":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/filesystem/-/filesystem-0.0.29.tgz#ee3748eb5be140dcf980c3bd35f11aec5f7a3748"
+  integrity sha512-85/1KfRedmfPGsbK8YzeaQUyV1FQAvMPMTuWFQ5EkLd2w7szhNO96bk3Rh/SKmOfd9co2rCLf0Voy4o7ECBOvw==
+  dependencies:
+    "@types/filewriter" "*"
+
+"@types/filewriter@*":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@types/filewriter/-/filewriter-0.0.28.tgz#c054e8af4d9dd75db4e63abc76f885168714d4b3"
+  integrity sha1-wFTor02d11205jq8dviFFocU1LM=
+
+"@types/firefox-webext-browser@^82.0.0":
+  version "82.0.0"
+  resolved "https://registry.yarnpkg.com/@types/firefox-webext-browser/-/firefox-webext-browser-82.0.0.tgz#4d0f5cfebd7321d2cbf0ccfb6032570f0138b958"
+  integrity sha512-zKHePkjMx42KIUUZCPcUiyu1tpfQXH9VR4iDYfns3HvmKVJzt/TAFT+DFVroos8BI9RH78YgF3Hi/wlC6R6cKA==
+
+"@types/har-format@*":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@types/har-format/-/har-format-1.2.5.tgz#4f6648814d0fdcb6a510e3364a9db439a753c4b1"
+  integrity sha512-IG8AE1m2pWtPqQ7wXhFhy6Q59bwwnLwO36v5Rit2FrbXCIp8Sk8E2PfUCreyrdo17STwFSKDAkitVuVYbpEHvQ==
 
 "@types/node@*":
   version "14.14.21"
@@ -306,7 +404,7 @@ ms@2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-node-fetch@^2.6.1:
+node-fetch@^2.6.0, node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
@@ -376,6 +474,17 @@ pump@^3.0.0:
   dependencies:
     end-of-stream "^1.1.0"
     once "^1.3.1"
+
+puppeteer-extra-plugin-adblocker@^2.11.10:
+  version "2.11.10"
+  resolved "https://registry.yarnpkg.com/puppeteer-extra-plugin-adblocker/-/puppeteer-extra-plugin-adblocker-2.11.10.tgz#4abdaa8861d47e9ed89174f117d1f8744d642dd4"
+  integrity sha512-P7vVr0ZEcn5IB2V0F925h/gMJebxAod7MBJBaqIUlu82Cpu1twCw+hP8WToi2V4DaAx5iOZspZ/7pll/seyczQ==
+  dependencies:
+    "@cliqz/adblocker-puppeteer" "^1.18.6"
+    "@types/chrome" "0.0.91"
+    debug "^4.1.1"
+    node-fetch "^2.6.0"
+    puppeteer-extra-plugin "^3.1.8"
 
 puppeteer-extra-plugin-stealth@^2.6.6:
   version "2.6.6"
@@ -485,6 +594,18 @@ through@^2.3.8:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
+
+tldts-core@^5.6.83:
+  version "5.6.83"
+  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-5.6.83.tgz#41f64506e1f45589181d7ccbff2fda0ed0cdccca"
+  integrity sha512-VzTF0y21FYSPLi64G1YaUDerJu+rLmWRLeny2+CnrJj8VHEhw1cGNyMZNHUB9bJS1SIu8dcw54RSkA9Kbru6FA==
+
+tldts-experimental@^5.6.21:
+  version "5.6.83"
+  resolved "https://registry.yarnpkg.com/tldts-experimental/-/tldts-experimental-5.6.83.tgz#4498f33ea5be10921dbce2041a6a9bbcc1af9929"
+  integrity sha512-CPvpyYIspIsbfEhEYLX3WT3l/pwNN3NIbsiSOqNO27jNU6FuEihArP382JZjYy/lLba3Odrei1yxQxWF74lmhQ==
+  dependencies:
+    tldts-core "^5.6.83"
 
 unbzip2-stream@^1.3.3:
   version "1.4.3"
