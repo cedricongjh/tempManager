@@ -6,10 +6,12 @@ This program is solely for the use of educational purposes, of using puppeteer, 
 an open source project maintained by the Chrome DevTools team.
 
 # Usage
-1. Replace YOUR_USERNAME_HERE AND YOUR_PASSWORD_HERE in main.js.
+1. Replace YOUR_USERNAME_HERE AND YOUR_PASSWORD_HERE in main.js. (UserName: nusstu\E0000001)
 
-2. Open a CLI, and change the working directory to the cloned repo. 
+2. Open a CLI, and change the working directory to the cloned repo.
 
-3. Use the command "node main".
+3. Run "yarn" to install the required packages.
 
-4. A screenshot similar to "example_screenshot.png" should be saved in the same directory.
+4. Run the command "node main".
+
+5. A screenshot similar to "example_screenshot.png" should be saved in the same directory.
